@@ -1,8 +1,4 @@
-const newColor = getComputedStyle(document.documentElement).getPropertyValue(‘--ion-color-button-level-0’);
-const newColor1 = getComputedStyle(document.documentElement).getPropertyValue(‘--ion-color-button-level-1’);
-const newColor2 = getComputedStyle(document.documentElement).getPropertyValue(‘--ion-color-button-level-2’);
-const newColor3 = getComputedStyle(document.documentElement).getPropertyValue(‘--ion-color-button-level-3’);
-const newColor4 = getComputedStyle(document.documentElement).getPropertyValue(‘--ion-color-button-level-4’);
+
 
 export const themes = {
   __test__: {
@@ -19,11 +15,11 @@ export const themes = {
     background: "#ffffff",
     text: "#000000",
     meta: "#666666",
-    grade4: newColor4,
-    grade3: newColor3,
-    grade2: newColor2,
-    grade1: newColor1,
-    grade0: newColor
+    grade4: "#196127",
+    grade3: "#239a3b",
+    grade2: "#7bc96f",
+    grade1: "#c6e48b",
+    grade0: "#ebedf0"
   },
   halloween: {
     background: "#ffffff",
