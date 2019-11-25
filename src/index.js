@@ -100,9 +100,7 @@ function drawYear(ctx, opts = {}) {
   ctx.fillStyle = theme.text;
   ctx.font = `10px '${fontFace}'`;
   ctx.fillText(
-    `${year.year}: ${count} Contribution${year.total === 1 ? "" : "s"}${
-      thisYear === year.year ? " (so far)" : ""
-    }`,
+    `${year.year}`,
     offsetX,
     offsetY - 17
   );
@@ -172,7 +170,7 @@ function drawMetaData(ctx, opts = {}) {
   ctx.fillStyle = theme.text;
   ctx.textBaseline = "hanging";
   ctx.font = `20px '${fontFace}'`;
-  ctx.fillText(`@${username} on GitHub`, canvasMargin, canvasMargin);
+  ctx.fillText(`${username}`, canvasMargin, canvasMargin);
 
   ctx.beginPath();
   ctx.moveTo(canvasMargin, 55);
